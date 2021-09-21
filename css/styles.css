@@ -1,0 +1,128 @@
+
+html,body{
+    margin: 0px;
+    background-color: #7c7494;
+    font-family: 'Sans-serif';
+}
+
+.container{
+    display:flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 30%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.chat-container{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 1px 0px 10px 10px rgba(0,0,0,0.40);
+    background-color: rgb(250, 250, 250);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 100px;
+}
+.messages{
+    height: 100%;
+    background-color:rgb(226, 226, 226);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /*scroll en mensajes*/
+}
+
+.message{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: fit-content; /*para que el mensaje no se salga del recuadro*/
+    max-width: 30%;
+    word-wrap: break-word; /*que la palabra se corte si es muy larga, tambien el mensaje*/
+    display:flex;
+    flex-direction: column;
+}
+
+.message:first-child{
+    margin-top: auto;
+}
+.message-name{
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+.own .message-name{
+    color: rgb(199, 199, 199);
+}
+.own{
+    background-color: #7c7494;
+    color: white;
+    margin-left: auto;
+    align-items: flex-end;
+}
+.text-input{
+    height: 100px;
+}
+
+.profile-picture{
+    width:140px;
+    height:140px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.profile-name{
+    color: white;
+    margin-top: 10px;
+    font-size: 23px;
+}
+.exit-button{
+    margin-top: auto;
+    margin-bottom: 15px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+}
+.header{
+    height: 100px;
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.message-form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding : 0 10px;
+}
+
+#message-input{
+    width: 100%;
+    border-radius: 5px;
+    outline-style: none;
+    padding: 10px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+#send-button{
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #7c7494;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
