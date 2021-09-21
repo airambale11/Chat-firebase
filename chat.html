@@ -12,7 +12,7 @@
         <div class="sidebar">
             <img class= "profile-picture" id="profile-picture" alt="Imagen de perfil">
             <span class="profile-name" id="profile-name">Gareth Bale</span>
-            <button class="exit-button" onClick = "signOut()">Salir</button>
+            <button class="exit-button" onclick = "signOut()">Salir</button>
         </div>
         <div class="chat-container">
             <div class="header">
@@ -21,7 +21,7 @@
             <div class="messages" id= "messages">
             </div>
             <div class="text-input">
-                <form onsubmit="sendMessage(event)" class="message-form" action="">
+                <form onsubmit="sendMessage(event)" class="message-form">
                     <input id= "message-input" type="text" placeholder="Escribe un mensaje.">
                     <button id = "send-button" >Enviar</button>
                 </form>
